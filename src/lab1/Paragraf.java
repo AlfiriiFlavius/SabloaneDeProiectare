@@ -1,6 +1,6 @@
 package lab1;
 
-public class Paragraf implements Element{
+public class Paragraf extends AbstractElement{
 	
 public String continut;
 	
@@ -14,6 +14,24 @@ public String continut;
 	public void print() {
 		System.out.println("Paragraf: "+this.continut);	
 	}
+	/*
+	@Override
+	public void addElement(Element e) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void removeElement(Element e) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public int getElements() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+	/*
 	
 	public void addText(String text){
 		this.continut=text;
@@ -26,6 +44,8 @@ public String continut;
 	public void addElement(Element e){}		
 	public void removeElement(Element e) {}
 	public int getElements() { return 0;}
+	
+	*/
 
 }
 

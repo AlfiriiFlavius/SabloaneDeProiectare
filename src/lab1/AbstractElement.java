@@ -1,47 +1,25 @@
 package lab1;
 
-public class Tabel extends AbstractElement{
+public abstract class AbstractElement implements Element{
 	
-public String numeTabel;
 	
-	public Tabel(){}
-	public Tabel(String continut) 
-	{
-		this.numeTabel=continut;
+	public void print() {
+		System.out.println("Table :"+numeElement);
 	}
-	
-	
-	
-	
-	/*
-	public void show(){
-		System.out.print("Tabel");
-	}
-
-	
+	@Override
 	public void addElement(Element e) {
 		// TODO Auto-generated method stub
 		
 	}
-
+	@Override
 	public void removeElement(Element e) {
 		// TODO Auto-generated method stub
 		
 	}
-
+	@Override
 	public int getElements() {
 		// TODO Auto-generated method stub
 		return 0;
 	}
-	*/
-	
-	
 
 }
-
-
-
-
-	
-
-

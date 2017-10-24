@@ -23,6 +23,9 @@ public interface Element {
 	       return numeElement;
 	   }
 	   */
+	public String numeElement=null;
+	
+	
 	
 	public void addElement(Element e);
 	public void removeElement(Element e);
