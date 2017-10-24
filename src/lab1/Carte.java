@@ -12,12 +12,18 @@ public class Carte {
 	String titluCarte;
 	ArrayList<Autor> autor;
 	Cuprins cuprins;
-	Capitole listaCap;
+	//Capitole listaCap;
+	ArrayList<Element> capitole;
 	
 	private static Scanner input;
 	
 	
-	public Carte(){}
+	public Carte(){
+		this.titluCarte = "";
+		this.autor = new ArrayList<Autor>();
+		this.capitole = new ArrayList<Element>();
+	}
+	/*
 	public Carte(String a,ArrayList<Autor> listaAutori,Cuprins c)
 	{
 		this.titluCarte=a;
@@ -31,12 +37,69 @@ public class Carte {
 		this.cuprins=c;	
 		this.listaCap=d;
 	}
+	*/
+	
+	public Carte(String titlu,Cuprins cuprins){
+		this.titluCarte = titlu;
+		this.autor = new ArrayList<Autor>();
+		this.capitole = new ArrayList<Element>();
+		this.cuprins = cuprins;
+	}
+	
+	/*
 	public String toString() {
 	       return "Titlu: "+titluCarte+", Autori:"+autor+", "+cuprins+", \nCapitole: "+listaCap+"\n";
 	   }
+	*/
 	
+	public String toString() {
+	       return "Titlu: "+titluCarte+"\n";
+	   }
+	
+	public void printCarte(){
+		System.out.println("Titlu: "+titluCarte+"\n");
+		for(Element e : this.capitole){
+			e.print();
+		}
+	}
+	
+	
+	public String getTitlu() {
+		return titluCarte;
+	}
+
+	public void setTitlu(String titlu) {
+		this.titluCarte = titlu;
+	}
+
+	public ArrayList<Autor> getAutori() {
+		return autor;
+	}
+
+	public void setAutori(ArrayList<Autor> autor) {
+		this.autor = autor;
+	}
+
+	public ArrayList<Element> getCapitole() {
+		return capitole;
+	}
+
+	public void setCapitole(ArrayList<Element> capitole) {
+		this.capitole = capitole;
+	}
+
+	public Cuprins getCuprins() {
+		return cuprins;
+	}
+
+	public void setCuprins(Cuprins cuprins) {
+		this.cuprins = cuprins;
+	}
 	
 //////////////
+	
+	
+	/*
 	public static void main(String [] args) throws IOException
 	{
 		
@@ -76,14 +139,10 @@ public class Carte {
 		Carte carte= new Carte(titluCarte,listaAutori,cuprins,cap);
         System.out.print(carte);
         
-  
-	
-		
-		
-		
 		
 	}
 	
+	*/
 	
 	
 	

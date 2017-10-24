@@ -1,24 +1,41 @@
 package lab1;
 
-public class Paragraf extends Element{
+public class Paragraf implements Element{
 	
 public String continut;
 	
 	public Paragraf(){}
-	public Paragraf(String nume,String continut) 
+	public Paragraf(String continut) 
 	{
-		super(nume);
 		this.continut=continut;
 		
 	}
 	
-	public String toString() {
-	       return continut;
-	   }
-	@Override
-	void print() {
-		System.out.println("Imagine " + numeElement + " " + continut);
-		
+	public void print() {
+		System.out.println("Paragraf: "+this.continut);	
+	}
+	
+	public void addText(String text){
+		this.continut=text;
+	}
+	
+	public void show(){
+		System.out.println("Paragraf");
 	}
 
+	public void addElement(Element e){}		
+	public void removeElement(Element e) {}
+	public int getElements() { return 0;}
+
 }
+
+
+
+
+	
+
+	
+
+	
+
+

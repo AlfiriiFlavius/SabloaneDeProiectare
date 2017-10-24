@@ -1,3 +1,4 @@
+/*
 package lab1;
 
 import java.io.IOException;
@@ -52,3 +53,4 @@ public class Subcapitole {
 	 }
 	
 }
+*/

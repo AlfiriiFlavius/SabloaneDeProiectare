@@ -2,6 +2,7 @@ package lab1;
 
 public class Cuprins {
 	
+	/*
 	String numeCuprins;
 	
 	public Cuprins(){}
@@ -13,5 +14,6 @@ public class Cuprins {
 	 public String toString() {
 	       return numeCuprins;
 	   }
+	   */
 
 }

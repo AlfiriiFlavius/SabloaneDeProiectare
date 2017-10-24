@@ -4,17 +4,24 @@ public class Autor {
 	
 	String nume;
 	
-	public Autor(){}
+	public Autor()
+	{
+		this.nume = "";
+	}
 	public Autor(String nume)
 	{
 		this.nume=nume;
 	}
+			
+	public String getNume()
+	{
+		return nume;
+	}
 	
-	 public String toString() {
-	       return nume;
-	   }
-	 
-	 
+	public void setNume(String nume) 
+	{
+		this.nume = nume;
+	}	
 	 
 
 }

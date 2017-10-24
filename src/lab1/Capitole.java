@@ -1,3 +1,4 @@
+/*
 package lab1;
 
 import java.util.ArrayList;
@@ -40,5 +41,9 @@ public class Capitole {
 		 
 		 System.out.print(cap);
 		 */
+
+/*
 	 }
 }
+
+*/

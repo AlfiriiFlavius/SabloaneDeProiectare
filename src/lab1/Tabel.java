@@ -1,24 +1,43 @@
 package lab1;
 
-public class Tabel extends Element{
+public class Tabel implements Element{
 	
-public String continut;
+public String numeTabel;
 	
 	public Tabel(){}
-	public Tabel(String nume,String continut) 
+	public Tabel(String continut) 
 	{
-		super(nume);
-		this.continut=continut;
-		
+		this.numeTabel=continut;
 	}
 	
-	public String toString() {
-	       return continut;
-	   }
-	@Override
-	void print() {
-		System.out.println("Imagine " + numeElement + " " + continut);
+	public void show(){
+		System.out.print("Tabel");
+	}
+
+	public void addElement(Element e) {
+		// TODO Auto-generated method stub
 		
 	}
 
+	public void removeElement(Element e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public int getElements() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+	public void print() {
+		System.out.println("Table :"+this.numeTabel);
+	}
+
 }
+
+
+
+
+	
+
+

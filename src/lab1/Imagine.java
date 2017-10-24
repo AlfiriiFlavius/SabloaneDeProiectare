@@ -1,14 +1,13 @@
 package lab1;
 
-public class Imagine extends Element{
+public class Imagine implements Element{
 
 	
 	public String continut;
 	
 	public Imagine(){}
-	public Imagine(String nume,String continut) 
+	public Imagine(String continut) 
 	{
-		super(nume);
 		this.continut=continut;
 		
 	}
@@ -16,13 +15,34 @@ public class Imagine extends Element{
 	public String toString() {
 	       return continut;
 	   }
-	@Override
-	void print() {
-		System.out.println("Imagine " + numeElement + " " + continut);
-		
+	
+	
+	public void addElement(Element e) {
+		// TODO Auto-generated method stub	
+	}
+
+	public void removeElement(Element e) {
+		// TODO Auto-generated method stub	
+	}
+
+	public int getElements() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public void print() {
+		System.out.println("Imagine :"+this.continut);
 	}
 	
 	
 	
 	
 }
+
+
+
+
+	
+	
+
+

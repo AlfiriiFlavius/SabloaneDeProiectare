@@ -2,7 +2,10 @@ package lab1;
 
 import java.io.IOException;
 
-public abstract class Element {
+public interface Element {
+	
+	
+	/*
 	
 	public String numeElement;
 	
@@ -19,8 +22,18 @@ public abstract class Element {
 	public String toString() {
 	       return numeElement;
 	   }
+	   */
+	
+	public void addElement(Element e);
+	public void removeElement(Element e);
+	public int getElements();
+	public void print();
+	
 	
 	
 	
 
 }
+
+
+
