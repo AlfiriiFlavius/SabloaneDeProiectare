@@ -10,7 +10,9 @@ public String numeTabel;
 		this.numeTabel=continut;
 	}
 	
-	
+	public void print() {
+		System.out.println("Paragraf: "+this.numeTabel);	
+	}
 	
 	
 	/*
