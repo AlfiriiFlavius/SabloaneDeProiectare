@@ -11,7 +11,7 @@ public String numeTabel;
 	}
 	
 	public void print() {
-		System.out.println("Paragraf: "+this.numeTabel);	
+		System.out.println("Tabel: "+this.numeTabel);	
 	}
 	
 	
