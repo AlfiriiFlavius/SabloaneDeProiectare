@@ -4,7 +4,7 @@ public abstract class AbstractElement implements Element{
 	
 	
 	public void print() {
-		System.out.println("Table :"+numeElement);
+		//System.out.println("Table :"+numeElement);
 	}
 	@Override
 	public void addElement(Element e) {

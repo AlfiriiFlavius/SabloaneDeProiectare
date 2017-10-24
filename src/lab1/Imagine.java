@@ -1,6 +1,6 @@
 package lab1;
 
-public class Imagine implements Element{
+public class Imagine extends AbstractElement{
 
 	
 	public String continut;
@@ -17,19 +17,6 @@ public class Imagine implements Element{
 	   }
 	
 	
-	public void addElement(Element e) {
-		// TODO Auto-generated method stub	
-	}
-
-	public void removeElement(Element e) {
-		// TODO Auto-generated method stub	
-	}
-
-	public int getElements() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
 	public void print() {
 		System.out.println("Imagine :"+this.continut);
 	}
