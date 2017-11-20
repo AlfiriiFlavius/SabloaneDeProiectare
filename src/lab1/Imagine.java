@@ -22,6 +22,22 @@ public class Imagine extends AbstractElement{
 	}
 	
 	
+	public String getNume() {
+		return continut;
+	}
+
+	public void setNume(String nume) {
+		this.continut = nume;
+	}
+
+
+	public void accept(Visitor v) {
+		v.visitImage(this);
+	}
+
+	
+	
+	
 	
 	
 }

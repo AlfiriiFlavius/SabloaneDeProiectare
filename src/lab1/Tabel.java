@@ -15,6 +15,24 @@ public String numeTabel;
 	}
 	
 	
+	
+	
+
+	public String getNume() {
+		return numeTabel;
+	}
+
+	public void setNume(String nume) {
+		this.numeTabel = nume;
+	}
+
+	
+
+	public void accept(Visitor v) {
+		v.visitTabel(this);
+	}
+	
+	
 	/*
 	public void show(){
 		System.out.print("Tabel");

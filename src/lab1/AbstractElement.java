@@ -3,23 +3,24 @@ package lab1;
 public abstract class AbstractElement implements Element{
 	
 	
-	public void print() {
-		//System.out.println("Table :"+numeElement);
-	}
-	@Override
-	public void addElement(Element e) {
-		// TODO Auto-generated method stub
+	
+	public void add(Element e) throws Exception {
+		throw new Exception("Not Supported");
 		
 	}
-	@Override
-	public void removeElement(Element e) {
-		// TODO Auto-generated method stub
+
+	public void remove(Element e) throws Exception {
+		throw new Exception("Not Supported");
 		
 	}
-	@Override
-	public int getElements() {
+
+	public Element getElement(int index) throws Exception {
+		throw new Exception("Not Supported");
+	}
+
+	public void accept(Visitor v) {
 		// TODO Auto-generated method stub
-		return 0;
+		
 	}
 
 }

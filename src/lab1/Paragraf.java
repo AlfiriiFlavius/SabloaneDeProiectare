@@ -3,6 +3,7 @@ package lab1;
 public class Paragraf extends AbstractElement{
 	
 public String continut;
+
 	
 	public Paragraf(){}
 	public Paragraf(String continut) 
@@ -14,6 +15,22 @@ public String continut;
 	public void print() {
 		System.out.println("Paragraf: "+this.continut);	
 	}
+	
+
+	public String getText() {
+		return continut;
+	}
+
+	public void setText(String text) {
+		this.continut = text;
+	}
+	
+
+	public void accept(Visitor v) {
+		v.visitParagraf(this);
+	}
+
+	
 	/*
 	@Override
 	public void addElement(Element e) {

@@ -2,7 +2,7 @@ package lab1;
 
 import java.util.ArrayList;
 
-public class Sectiune implements Element {
+public class Sectiune extends AbstractElement {
 
 	public ArrayList<Element> elemente;
 	public String titlu;
@@ -13,7 +13,7 @@ public class Sectiune implements Element {
 	}
 
 	public void addElement(Element e) {
-		elemente.add(e);
+		elemente.add(e);                                             
 	}
 
 	public void removeElement(Element e) {
@@ -22,6 +22,10 @@ public class Sectiune implements Element {
 	}
 	public int getElements() {
 		return elemente.size();
+	}
+	
+	public void accept(Visitor v) {
+		v.visitSectiune(this);
 	}
 
 	public void print() {
