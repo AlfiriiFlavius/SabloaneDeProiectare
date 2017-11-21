@@ -6,15 +6,13 @@ public class DocumentStatVisitor implements Visitor{
 	private int paragrafCounter = 0;
 	private int tabelCounter = 0;
 	private int sectiuneCounter = 0;
-	
 	public void visitImageProxy(Imagine img) {
 		this.imageCounter++;
 		
 	}
 
 	public void visitImage(Imagine img) {
-		// TODO Auto-generated method stub
-		
+		imageCounter++;
 	}
 
 	public void visitParagraf(Paragraf paragraf) {
@@ -43,6 +41,11 @@ public class DocumentStatVisitor implements Visitor{
 
 	public int getSectiuneCounter() {
 		return sectiuneCounter;
+	}
+	
+	public void printStatic()
+	{
+		System.out.print("\nNr. Imag:"  + imageCounter);
 	}
 
 }

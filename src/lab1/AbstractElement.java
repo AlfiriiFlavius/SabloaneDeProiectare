@@ -18,9 +18,8 @@ public abstract class AbstractElement implements Element{
 		throw new Exception("Not Supported");
 	}
 
-	public void accept(Visitor v) {
-		// TODO Auto-generated method stub
-		
-	}
+	
+	
+	
 
 }

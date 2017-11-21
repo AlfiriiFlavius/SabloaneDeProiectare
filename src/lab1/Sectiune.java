@@ -26,6 +26,10 @@ public class Sectiune extends AbstractElement {
 	
 	public void accept(Visitor v) {
 		v.visitSectiune(this);
+		for(Element e : this.elemente){
+			e.accept(v);	
+		}
+		
 	}
 
 	public void print() {

@@ -18,6 +18,7 @@ public class Carte {
 	private static Scanner input;
 	
 	
+	
 	public Carte(){
 		this.titluCarte = "";
 		this.autor = new ArrayList<Autor>();
@@ -95,6 +96,15 @@ public class Carte {
 	public void setCuprins(Cuprins cuprins) {
 		this.cuprins = cuprins;
 	}
+
+	public void visit(Visitor dsv) {
+		for(Element elem: this.capitole) {
+			elem.accept(dsv);
+		}
+		
+	}
+	
+	
 	
 //////////////
 	

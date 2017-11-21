@@ -5,6 +5,7 @@ public class Imagine extends AbstractElement{
 	
 	public String continut;
 	
+	
 	public Imagine(){}
 	public Imagine(String continut) 
 	{
@@ -14,8 +15,7 @@ public class Imagine extends AbstractElement{
 	
 	public String toString() {
 	       return continut;
-	   }
-	
+	   }	
 	
 	public void print() {
 		System.out.println("Imagine :"+this.continut);

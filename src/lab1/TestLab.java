@@ -18,9 +18,14 @@ public class TestLab {
 		b.elemente.add(new Imagine("	Image_engine"));
 		b.elemente.add(new Tabel("		Tabel_Cifre"));
 		b.elemente.add(new Imagine("	Image_fire"));
+		b.elemente.add(new ImageProxy("	Image_fire_2"));
 		c.getCapitole().add(b);
 		
 		c.printCarte();
+		
+		DocumentStatVisitor dsv = new DocumentStatVisitor();
+		c.visit(dsv);
+		dsv.printStatic();
 		
 }
 	
