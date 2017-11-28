@@ -45,7 +45,7 @@ public class DocumentStatVisitor implements Visitor{
 	
 	public void printStatic()
 	{
-		System.out.print("\nNr. Imag:"  + imageCounter);
+		System.out.print("\nNr. Imag:"  + imageCounter + "\nNr. Paragrafe:"  + paragrafCounter + "\nNr. Tabele:"  + tabelCounter + "\nNr. Sectiuni:"  + sectiuneCounter);
 	}
 
 }
