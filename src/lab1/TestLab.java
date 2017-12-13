@@ -27,6 +27,40 @@ public class TestLab {
 		c.visit(dsv);
 		dsv.printStatic();
 		
+		////////////////
+		/*
+		
+		
+		
+		Builder b1 = new JSONBuiler("book.json");
+        Element book;
+        
+        b1.buildPart();
+        book = b1.getResult();   
+        book.print();
+        */
+		/*
+        Command open = new OpenCommand();
+        open.execute();
+        Command statistics = new StatisticsCommand();
+        statistics.execute();
+        */
+		System.out.print("\n\n");
+		
+		Command com = new NewComand();
+		com.execute();
+		
+		Element book = DocumentManager.getInstance().getElement();
+		book.print();
+		
+		///////delete
+		Command delCmd = new DeleteCommand();
+		delCmd.execute();
+		book.print();
+		
+		
+		
+		
 }
 	
 

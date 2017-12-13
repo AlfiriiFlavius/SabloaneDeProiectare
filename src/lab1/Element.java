@@ -35,6 +35,7 @@ public interface Element {
 
 	public void accept(Visitor v);
 	public void print();
+	//public void delete();
 	
 	
 	

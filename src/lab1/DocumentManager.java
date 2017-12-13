@@ -18,12 +18,12 @@ public class DocumentManager {
 	   
 	   
 				
-		public Element getDoc() 
+		public Element getElement() 
 		{
 			return doc;
 		}
 
-		public void setDoc(Element doc) 
+		public void setElement(Element doc) 
 		{
 			this.doc = doc;
 		}
