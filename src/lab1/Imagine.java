@@ -1,6 +1,6 @@
 package lab1;
 
-public class Imagine extends AbstractElement{
+public class Imagine extends AbstractElement {
 
 	
 	public String continut;

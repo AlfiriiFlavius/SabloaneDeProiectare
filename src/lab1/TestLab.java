@@ -56,6 +56,7 @@ public class TestLab {
 		///////delete
 		Command delCmd = new DeleteCommand();
 		delCmd.execute();
+		book = DocumentManager.getInstance().getElement();
 		book.print();
 		
 		

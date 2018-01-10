@@ -8,8 +8,8 @@ public class DeleteCommand implements Command{
 		
 		Element book = DocumentManager.getInstance().getElement();
 		//book.delete();
-		
-		DocumentManager.getInstance().setElement(book);
+		Element newBook = new Sectiune("S1");
+		DocumentManager.getInstance().setElement(newBook);
 		
 		
 	}

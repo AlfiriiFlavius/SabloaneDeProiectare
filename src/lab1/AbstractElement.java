@@ -1,6 +1,6 @@
 package lab1;
 
-public abstract class AbstractElement implements Element{
+public abstract class AbstractElement extends SubjectElement13 {
 	
 	
 	
